@@ -14,13 +14,9 @@ export default class Todo extends React.Component {
           completed: this.props.todo.complete,
         })}>
         <div className='view'>
-          <label onDoubleClick={this._handleLabelDoubleClick}>
+          <label>
             {this.props.todo.text}
           </label>
-          <button
-            className='destroy'
-            onClick={this._handleDestroyClick}
-          />
         </div>
       </li>
     )

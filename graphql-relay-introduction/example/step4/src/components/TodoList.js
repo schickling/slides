@@ -16,6 +16,7 @@ class TodoList extends React.Component {
             <Todo
               key={edge.node.id}
               todo={edge.node}
+              viewer={this.props.viewer}
             />
           )}
         </ul>
@@ -34,9 +35,11 @@ export default Relay.createContainer(TodoList, {
               id
               text
               complete
+              ${Todo.getFragment('todo')}
             }
           }
-        }
+        },
+        ${Todo.getFragment('viewer')}
       }
     `,
   },
