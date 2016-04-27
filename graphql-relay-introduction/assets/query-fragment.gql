@@ -1,0 +1,22 @@
+{
+  todo(id: 42) {
+    id
+    text
+    complete
+    comments {
+      ...MyComment
+    }
+  }
+}
+
+fragment MyComment on Comment {
+  comment
+  author {
+    name
+    profilePicture(size: 50)  {
+      uri
+      width
+      height
+    }
+  }
+}

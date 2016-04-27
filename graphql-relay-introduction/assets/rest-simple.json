@@ -1,0 +1,8 @@
+// GET http://todoapp.com/v1/todos
+[{
+  "text": "Visit http://graph.cool",
+  "complete": true
+}, {
+  "text": "Follow @graphcool on Twitter",
+  "complete": false
+}]

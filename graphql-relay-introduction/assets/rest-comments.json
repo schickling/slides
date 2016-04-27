@@ -1,0 +1,15 @@
+// GET http://todoapp.com/v2/todos
+[{
+  "text": "Visit http://graph.cool",
+  "complete": true,
+  "comments": [{
+    "comment": "Been there. Done that.",
+    "author": {
+      "name": "Brendan Eich"
+    }
+  }]
+}, {
+  "text": "Follow @graphcool on Twitter",
+  "complete": false,
+  "comments": []
+}]

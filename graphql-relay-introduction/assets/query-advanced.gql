@@ -1,0 +1,18 @@
+{
+  todo(id: 42) {
+    id
+    text
+    complete
+    comments {
+      comment
+      author {
+        name
+        profilePicture(size: 50)  {
+          uri
+          width
+          height
+        }
+      }
+    }
+  }
+}

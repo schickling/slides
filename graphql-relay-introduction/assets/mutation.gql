@@ -1,0 +1,10 @@
+mutation {
+  createTodo(
+    text: "Signup for beta on http://graph.cool"
+    complete: false
+  ) {
+    id
+    text
+    complete
+  }
+}
