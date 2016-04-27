@@ -22,7 +22,7 @@ import {
   Spectacle,
   Text
 } from 'spectacle'
-
+import CodeSlide from 'spectacle-code-slide'
 
 import 'normalize.css'
 import 'spectacle/lib/themes/default/index.css'
@@ -34,6 +34,7 @@ const images = {
   graphcool: require('../assets/graphcool-logo.svg'),
   graphql: require('../assets/graphql-logo.svg'),
   relay: require('../assets/relay-logo.svg'),
+  twitter: require('../assets/twitter-logo.svg'),
 }
 
 preloader(images)
@@ -102,7 +103,7 @@ export default class Presentation extends React.Component {
               margin='40px auto'
             />
           </Slide>
-          <Slide notes="Ask what's wrong with that">
+          <Slide notes='Ask whats wrong with that'>
             <Heading size={1} fit>
               What if?!
             </Heading>
@@ -278,15 +279,53 @@ export default class Presentation extends React.Component {
               <ListItem>Includes powerful mutation system</ListItem>
             </List>
           </Slide>
-          <Slide bgColor='white'>
-            <Heading textColor='grey' size={4}>
-              Architecture
-            </Heading>
-            <Image src={images.architecture} width='100%' />
-          </Slide>
+          <CodeSlide
+            style={{background: colors.dark}}
+            transition={[]}
+            lang='js'
+            code={require('raw!../assets/relay-setup.example')}
+            ranges={[
+              { loc: [2, 3] },
+              { loc: [8, 11] },
+              { loc: [4, 5] },
+              { loc: [12, 18] },
+            ]}
+          />
           <Slide bgImage={images.demo} bgDarken={0.55}>
             <Heading size={1} fit>
               Demo
+            </Heading>
+          </Slide>
+          <Slide>
+            <Heading size={1}>
+              Alternatives to Relay
+            </Heading>
+            <List textColor='white'>
+              <ListItem>github.com/kadirahq/lokka - Very lightweight</ListItem>
+              <ListItem>github.com/relax/relate - Redux Integration</ListItem>
+              <ListItem>github.com/apollostack/apollo-client - Pre-alpha</ListItem>
+            </List>
+          </Slide>
+          <Slide>
+            <Heading size={1}>
+              Further reading
+            </Heading>
+            <List textColor='white'>
+              <ListItem>GraphQL Introduction by Nick Schrock</ListItem>
+              <ListItem>learngraphql.com</ListItem>
+              <ListItem>Lee Byron - Exploring GraphQL at react-europe 2015</ListItem>
+            </List>
+          </Slide>
+          <Slide>
+            <Heading size={1} textColor='dark' margin='0 0 80px'>
+              Thank you
+            </Heading>
+            <Heading textColor='white' size={4} style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+              Follow us on <Image src={images.twitter} style={{padding: '0 20px', margin: 0}} height='50px'/> @graphcool
+            </Heading>
+            <Heading size={4} bgColor='white' margin='120px 0 40px' textColor='dark' style={{padding: 20}}>Invite code: KarlsruheJS</Heading>
+            <Heading size={5} textColor='white'>
+              Join our beta on <i>www.graph.cool</i>
             </Heading>
           </Slide>
         </Deck>
