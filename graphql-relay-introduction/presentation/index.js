@@ -323,7 +323,7 @@ export default class Presentation extends React.Component {
             <Heading textColor='white' size={4} style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
               Follow us on <Image src={images.twitter} style={{padding: '0 20px', margin: 0}} height='50px'/> @graphcool
             </Heading>
-            <Heading size={4} bgColor='white' margin='120px 0 40px' textColor='dark' style={{padding: 20}}>Invite code: KarlsruheJS</Heading>
+            <Heading size={4} bgColor='white' margin='120px 0 40px' textColor='dark' style={{padding: 20}}>Invite code: FrankenJS</Heading>
             <Heading size={5} textColor='white'>
               Join our beta on <i>www.graph.cool</i>
             </Heading>
