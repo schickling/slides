@@ -10,7 +10,7 @@ import ViewerQueries from './queries/ViewerQueries'
 import './style.css'
 
 Relay.injectNetworkLayer(
-  new Relay.DefaultNetworkLayer('https://api.graph.cool/relay/v1/UHJvamVjdDpjaW5pbGdxZnAwMDZjMDFta21vYnV5d2xq')
+  new Relay.DefaultNetworkLayer('https://api.graph.cool/relay/v1/UHJvamVjdDpjaW56ejR6ZGQwMGllMDFxcHZzZDNoaG04')
 )
 
 ReactDOM.render(

@@ -3,7 +3,7 @@
   "scripts": {
     "start": "webpack-dev-server -d --hot --inline --no-info --port 3000"
   },
-  "react-relay-schema": "https://api.graph.cool/relay/v1/UHJvamVjdDpjaW5pbGdxZnAwMDZjMDFta21vYnV5d2xq/schema.json",
+  "react-relay-schema": "https://api.graph.cool/relay/v1/UHJvamVjdDpjaW56ejR6ZGQwMGllMDFxcHZzZDNoaG04/schema.json",
   "dependencies": {
     "classnames": "2.2.3",
     "history": "2.1.0",
