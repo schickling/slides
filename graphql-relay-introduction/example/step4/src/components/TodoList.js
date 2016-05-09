@@ -33,8 +33,6 @@ export default Relay.createContainer(TodoList, {
           edges {
             node {
               id
-              text
-              complete
               ${Todo.getFragment('todo')}
             }
           }
