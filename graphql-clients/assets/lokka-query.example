@@ -1,0 +1,9 @@
+client.query(`
+    {
+      allFilms {
+        films {
+          title
+        }
+      }
+    }
+`).then(result => console.log(result.allFilms))
