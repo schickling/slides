@@ -1,0 +1,12 @@
+{
+  todos {
+    text
+    complete
+    comments {
+      comment
+      author {
+        name
+      }
+    }
+  }
+}

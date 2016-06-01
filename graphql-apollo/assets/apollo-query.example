@@ -1,0 +1,14 @@
+client.query({
+  query: gql`
+    query getCategory($categoryId: Int!) {
+      category(id: $categoryId) {
+        name
+        color
+      }
+    }
+  `,
+  variables: {
+    categoryId: 5,
+  },
+  forceFetch: false,
+}).then(({ errors, data }) => console.log(data))
