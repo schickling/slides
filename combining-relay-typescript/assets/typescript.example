@@ -1,0 +1,22 @@
+interface Pokemon {
+  name: string
+  url: string
+}
+
+interface Props {
+  pokemon: Pokemon
+}
+
+interface State {
+}
+
+export default class Pokemon extends React.Component<Props, State> {
+  render() {
+    return (
+      <div>
+        Name: ${this.props.pokemon.name}
+        <img src={this.props.pokemon.url} />
+      </div>
+    )
+  }
+}

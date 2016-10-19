@@ -1,0 +1,10 @@
+class Pokemon extends React.Component {
+  render() {
+    return (
+      <div>
+        Name: ${this.props.pokemon.name}
+        <img src={this.props.pokemon.url} />
+      </div>
+    )
+  }
+}

@@ -1,0 +1,10 @@
+export default Relay.createContainer(Pokemon, {
+  fragments: {
+    pokemon: () => Relay.QL`
+      fragment on Pokemon {
+        name
+        url
+      }
+    `,
+  },
+}
